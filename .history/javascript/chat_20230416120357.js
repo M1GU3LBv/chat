@@ -4,7 +4,7 @@ incoming_id = form.querySelector(".incoming_id").value,
 inputField = form.querySelector(".input-field"),
 sendBtn = form.querySelector(".send"),
 chatBox = document.querySelector(".chat-box");
-
+const trigger = document.querySelector('.emoji-button');
 form.onsubmit = (e)=>{
     e.preventDefault();
 }
@@ -62,4 +62,9 @@ function scrollToBottom(){
     chatBox.scrollTop = chatBox.scrollHeight;
   }
   
-
+  const picker = createPopup({
+    // picker options go here
+  }, {
+    referenceElement: trigger,
+    triggerElement: trigger
+  });

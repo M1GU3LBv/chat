@@ -62,4 +62,8 @@ function scrollToBottom(){
     chatBox.scrollTop = chatBox.scrollHeight;
   }
   
+  const container = document.querySelector('.pickerContainer');
+const picker = createPicker({
+  rootElement: container
+});
 

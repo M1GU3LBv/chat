@@ -1,9 +1,16 @@
-
+import { EmojiButton } from '@joeattardi/emoji-button';
+const picker = new EmojiButton();
+const trigger = document.querySelector('.trigger');
 const form = document.querySelector(".typing-area"),
 incoming_id = form.querySelector(".incoming_id").value,
 inputField = form.querySelector(".input-field"),
 sendBtn = form.querySelector(".send"),
 chatBox = document.querySelector(".chat-box");
+picker.on('emoji', selection => {
+    trigger.innerHTML = selection.emoji;
+  });
+  
+trigger.addEventListener('click', () => picker.togglePicker(trigger));
 
 form.onsubmit = (e)=>{
     e.preventDefault();
@@ -62,4 +69,3 @@ function scrollToBottom(){
     chatBox.scrollTop = chatBox.scrollHeight;
   }
   
-

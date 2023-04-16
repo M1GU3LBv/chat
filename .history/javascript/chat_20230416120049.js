@@ -62,4 +62,9 @@ function scrollToBottom(){
     chatBox.scrollTop = chatBox.scrollHeight;
   }
   
+  const container = document.querySelector('.pickerContainer');
+const picker = createPicker({
+  rootElement: container
+});
 
+<script src="https://unpkg.com/picmo@latest/dist/umd/index.js"></script>

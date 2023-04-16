@@ -31,40 +31,14 @@
       </div>
       <form action="#" class="typing-area">
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
-        <input type="text" name="message" class="message input-field" placeholder="Escribe aquí un mensaje..." autocomplete="off">
-        <button class="first-btn active fas fa-smile"></button>
+        <input type="text" name="message" class="input-field" placeholder="Escribe aquí un mensaje..." autocomplete="off">
+        <button class="emoji"><i class="fal fa-smile-plus"></i></button>
         <button class="send"><i class="fab fa-telegram-plane"></i></button>
       </form>
-      <!-- <div class="uk-container uk-container-small uk-section">
-        
-        <div class="uk-margin-large">
-            
-            <button class="first-btn uk-button uk-button-primary">Start picker</button>
-        </div>
-      </div> -->
-     
     </section>
   </div>
- 
+
   <script src="javascript/chat.js"></script>
-  <script src="javascript/vanillaEmojiPicker.js"></script>
-    <script>
 
-        new EmojiPicker({
-            trigger: [
-                {
-                    selector: '.first-btn',
-                    insertInto: '.message' // '.selector' can be used without array
-                },
-                {
-                    selector: '.second-btn',
-                    insertInto: '.message'
-                }
-            ],
-            closeButton: true,
-            //specialButtons: green
-        });
-
-    </script>
 </body>
 </html>

@@ -32,7 +32,7 @@
       <form action="#" class="typing-area">
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
         <input type="text" name="message" class="message input-field" placeholder="Escribe aquí un mensaje..." autocomplete="off">
-        <button class="first-btn active fas fa-smile"></button>
+        <button class="first-btn active">😃</button>
         <button class="send"><i class="fab fa-telegram-plane"></i></button>
       </form>
       <!-- <div class="uk-container uk-container-small uk-section">

@@ -1,8 +1,7 @@
-
 const form = document.querySelector(".typing-area"),
 incoming_id = form.querySelector(".incoming_id").value,
 inputField = form.querySelector(".input-field"),
-sendBtn = form.querySelector(".send"),
+sendBtn = form.querySelector("button"),
 chatBox = document.querySelector(".chat-box");
 
 form.onsubmit = (e)=>{
@@ -62,4 +61,3 @@ function scrollToBottom(){
     chatBox.scrollTop = chatBox.scrollHeight;
   }
   
-

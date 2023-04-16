@@ -31,17 +31,20 @@
       </div>
       <form action="#" class="typing-area">
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
-        <input type="text" name="message" class="message input-field" placeholder="Escribe aquí un mensaje..." autocomplete="off">
-        <button class="first-btn active fas fa-smile"></button>
+        <input type="text" name="message" class="input-field" placeholder="Escribe aquí un mensaje..." autocomplete="off">
+         
+       
         <button class="send"><i class="fab fa-telegram-plane"></i></button>
       </form>
-      <!-- <div class="uk-container uk-container-small uk-section">
+      <div class="uk-container uk-container-small uk-section">
         
         <div class="uk-margin-large">
             
             <button class="first-btn uk-button uk-button-primary">Start picker</button>
         </div>
-      </div> -->
+        
+        
+    </div>
      
     </section>
   </div>
@@ -54,11 +57,11 @@
             trigger: [
                 {
                     selector: '.first-btn',
-                    insertInto: '.message' // '.selector' can be used without array
+                    insertInto: ['.one', '.two'] // '.selector' can be used without array
                 },
                 {
                     selector: '.second-btn',
-                    insertInto: '.message'
+                    insertInto: '.two'
                 }
             ],
             closeButton: true,

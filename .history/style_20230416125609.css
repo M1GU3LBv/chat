@@ -339,6 +339,7 @@ body{
   pointer-events: none;
   border-radius: 5px 5px 5px 5px;
   transition: all 0.3s ease;
+  
 }
 .typing-area button.active{
   opacity: 1;
