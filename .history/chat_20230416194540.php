@@ -29,16 +29,12 @@
       <div class="chat-box">
 
       </div>
-
-
-
-
       <form action="#" class="typing-area">
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
         <input type="text" name="message" class="message input-field" placeholder="Escribe aquí un mensaje..." autocomplete="off">
        
         <label class="label">
-  <input type="file" accept="image/x-png,image/gif,image/jpeg,image/jpg" name="image"/>
+  <input type="file"/>
   <span class="fas fa-images"></span>
 </label>
     

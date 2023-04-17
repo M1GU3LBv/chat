@@ -6,33 +6,7 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
-label.label input[type="file"] {
-  position: absolute;
-  top: -1000px;
-}
-.label {
-  cursor: pointer;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  padding: 5px 15px;
-  margin: 5px;
-  background: #dddddd;
-  display: inline-block;
-}
-.label:hover {
-  background: #5cbd95;
-}
-.label:active {
-  background: #9fa1a0;
-}
-.label:invalid + span {
-  color: #000000;
-}
-.label:valid + span {
-  color: #ffffff;
-}
 body{
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,7 +277,6 @@ body{
 .chat-box .chat{
   margin: 15px 0;
 }
-
 .chat-box .chat p{
   word-wrap: break-word;
   padding: 8px 16px;
@@ -325,13 +298,6 @@ body{
 .chat-box .incoming{
   display: flex;
   align-items: flex-end;
-}
-.chat-box img{
-  /* display: flex;
-  align-items: flex-start;
-  height: 60px;
-  width: 60px; */
-  border-radius: 0;
 }
 .chat-box .incoming img{
   height: 35px;
@@ -380,7 +346,6 @@ body{
 }
 .custom-file-input {
   color: transparent;
-  
 }
 .custom-file-input::-webkit-file-upload-button {
   visibility: hidden;

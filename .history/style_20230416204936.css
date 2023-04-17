@@ -303,7 +303,6 @@ body{
 .chat-box .chat{
   margin: 15px 0;
 }
-
 .chat-box .chat p{
   word-wrap: break-word;
   padding: 8px 16px;
@@ -325,13 +324,6 @@ body{
 .chat-box .incoming{
   display: flex;
   align-items: flex-end;
-}
-.chat-box img{
-  /* display: flex;
-  align-items: flex-start;
-  height: 60px;
-  width: 60px; */
-  border-radius: 0;
 }
 .chat-box .incoming img{
   height: 35px;

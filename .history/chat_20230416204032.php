@@ -38,7 +38,7 @@
         <input type="text" name="message" class="message input-field" placeholder="Escribe aquí un mensaje..." autocomplete="off">
        
         <label class="label">
-  <input type="file" accept="image/x-png,image/gif,image/jpeg,image/jpg" name="image"/>
+  <input type="file" accept="image/x-png,image/gif,image/jpeg,image/jpg" name="imgs"/>
   <span class="fas fa-images"></span>
 </label>
     

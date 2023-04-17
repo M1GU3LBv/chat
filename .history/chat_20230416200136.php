@@ -20,7 +20,7 @@
           }
         ?>
         <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
-        <img src="php/images/<?php echo $row['img']; ?>" alt="">
+        <!-- <img src="php/images/<?php echo $row['img']; ?>" alt=""> -->
         <div class="details">
           <span><?php echo $row['fname']. " " . $row['lname'] ?></span>
           <p><?php echo $row['status']; ?></p>
@@ -29,16 +29,12 @@
       <div class="chat-box">
 
       </div>
-
-
-
-
       <form action="#" class="typing-area">
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
         <input type="text" name="message" class="message input-field" placeholder="Escribe aquí un mensaje..." autocomplete="off">
        
         <label class="label">
-  <input type="file" accept="image/x-png,image/gif,image/jpeg,image/jpg" name="image"/>
+  <input type="file"/>
   <span class="fas fa-images"></span>
 </label>
     

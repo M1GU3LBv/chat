@@ -153,7 +153,7 @@ body{
 }
 .wrapper img{
   object-fit: cover;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 .users header img{
   height: 50px;
@@ -325,13 +325,6 @@ body{
 .chat-box .incoming{
   display: flex;
   align-items: flex-end;
-}
-.chat-box img{
-  /* display: flex;
-  align-items: flex-start;
-  height: 60px;
-  width: 60px; */
-  border-radius: 0;
 }
 .chat-box .incoming img{
   height: 35px;

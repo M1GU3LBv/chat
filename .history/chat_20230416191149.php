@@ -6,7 +6,7 @@
   }
 ?>
 <?php include_once "header.php"; ?>
-<body class="bg-pimary">
+<body>
   <div class="wrapper">
     <section class="chat-area">
       <header>
@@ -29,23 +29,17 @@
       <div class="chat-box">
 
       </div>
-
-
-
-
       <form action="#" class="typing-area">
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
         <input type="text" name="message" class="message input-field" placeholder="Escribe aquí un mensaje..." autocomplete="off">
-       
-        <label class="label">
-  <input type="file" accept="image/x-png,image/gif,image/jpeg,image/jpg" name="image"/>
-  <span class="fas fa-images"></span>
-</label>
-    
-
+        <!-- <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required> -->
+        <!-- <input class="custom-file-input fas fa-images" type="file"> -->
         <button class="first-btn active fas fa-smile"></button>
         <button class="send"><i class="fab fa-telegram-plane"></i></button>
-        
+        <label class="file">
+  <input type="file" id="file" aria-label="File browser example">
+  <span class="file-custom"></span>
+</label>
       </form>
       <!-- <div class="uk-container uk-container-small uk-section">
         

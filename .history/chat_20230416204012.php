@@ -37,10 +37,9 @@
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
         <input type="text" name="message" class="message input-field" placeholder="Escribe aquí un mensaje..." autocomplete="off">
        
-        <label class="label">
-  <input type="file" accept="image/x-png,image/gif,image/jpeg,image/jpg" name="image"/>
-  <span class="fas fa-images"></span>
-</label>
+       
+  <input type="file" accept="image/x-png,image/gif,image/jpeg,image/jpg" name="imgs"/>
+  
     
 
         <button class="first-btn active fas fa-smile"></button>

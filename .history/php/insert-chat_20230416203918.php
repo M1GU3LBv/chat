@@ -7,8 +7,7 @@
         $message = mysqli_real_escape_string($conn, $_POST['message']);
        
         if(!empty($message)){
-        if (isset($_FILES['image'])) {
-
+        if (isset($_FILES['imgs'])) {
     
     $img_name = $_FILES['image']['name'];
     $img_type = $_FILES['image']['type'];

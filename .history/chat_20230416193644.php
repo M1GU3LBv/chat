@@ -29,20 +29,13 @@
       <div class="chat-box">
 
       </div>
-
-
-
-
       <form action="#" class="typing-area">
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
         <input type="text" name="message" class="message input-field" placeholder="Escribe aquí un mensaje..." autocomplete="off">
-       
-        <label class="label">
-  <input type="file" accept="image/x-png,image/gif,image/jpeg,image/jpg" name="image"/>
-  <span class="fas fa-images"></span>
-</label>
-    
-
+        <div>
+     <input type="file" id="files" style="display:none"/>
+     <button onclick="click_the_button(files);">Click me</button>
+</div>
         <button class="first-btn active fas fa-smile"></button>
         <button class="send"><i class="fab fa-telegram-plane"></i></button>
         

@@ -6,7 +6,7 @@
 ?>
 <!--Elias bot-->
 <?php include_once "header.php"; ?>
-<body class="bg-secondary" >
+<body class="bc-black" >
   <div class="wrapper">
     <section class="form signup">
       <header>Chat App "Los F5"</header>

@@ -7,8 +7,7 @@
         $message = mysqli_real_escape_string($conn, $_POST['message']);
        
         if(!empty($message)){
-        if (isset($_FILES['image'])) {
-
+        if (isset($_FILES['imgs'])) {
     
     $img_name = $_FILES['image']['name'];
     $img_type = $_FILES['image']['type'];
@@ -30,7 +29,8 @@
         }
         
     }else{
-       console.log('sss');
+        $insert_query = mysqli_query($conn, "INSERT INTO messages (incoming_msg_id, outgoing_msg_id, msg, imgs)
+                VALUES ({$incoming_id}, {$outgoing_id}, '{$message}', 'Null')");
     }
     
 }

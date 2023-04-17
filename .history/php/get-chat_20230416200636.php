@@ -15,11 +15,10 @@
                     $output .= '<div class="chat outgoing">
                                 <div class="details">
                                     <p>'. $row['msg'] .'</p>  
+                                    <img src="php/images/'.$row['imgs'].'" alt="">
+                                    <p>'. $row['imgs'] .'</p>  
                                 </div>
                                 </div>';
-                                if ($row['imgs'] !='' ) {
-                                    $output .= ' <img src="php/images/'.$row['imgs'].'" alt="">'; 
-                                }
                 }else{
                     $output .= '<div class="chat incoming">
                                 <img src="php/images/'.$row['img'].'" alt="">

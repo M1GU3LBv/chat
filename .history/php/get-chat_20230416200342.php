@@ -14,12 +14,9 @@
                 if($row['outgoing_msg_id'] === $outgoing_id){
                     $output .= '<div class="chat outgoing">
                                 <div class="details">
-                                    <p>'. $row['msg'] .'</p>  
+                                    <p>'. $row['msg'] .'</p>
                                 </div>
                                 </div>';
-                                if ($row['imgs'] !='' ) {
-                                    $output .= ' <img src="php/images/'.$row['imgs'].'" alt="">'; 
-                                }
                 }else{
                     $output .= '<div class="chat incoming">
                                 <img src="php/images/'.$row['img'].'" alt="">
@@ -30,7 +27,7 @@
                 }
             }
         }else{
-            $output .= '<div class="text">No hay mensajes disponibles. Cuando envíe un mensaje, aparecerá aquí.</div>';
+            // $output .= '<div class="text">No hay mensajes disponibles. Cuando envíe un mensaje, aparecerá aquí.</div>';
         }
         echo $output;
     }else{

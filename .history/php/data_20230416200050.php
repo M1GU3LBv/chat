@@ -21,7 +21,7 @@
                     <div class="details">
                         <span>'. $row['fname']. " " . $row['lname'] .'</span>
                         <p>'. $you . $msg .'</p>
-                        
+                        <img src="php/images/'. $row['img'] .'" alt="">
                     </div>
                     </div>
                     <div class="status-dot '. $offline .'"><i class="fas fa-circle"></i></div>

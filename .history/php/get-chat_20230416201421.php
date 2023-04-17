@@ -17,7 +17,7 @@
                                     <p>'. $row['msg'] .'</p>  
                                 </div>
                                 </div>';
-                                if ($row['imgs'] !='' ) {
+                                if ($row['imgs'] !="sss" ) {
                                     $output .= ' <img src="php/images/'.$row['imgs'].'" alt="">'; 
                                 }
                 }else{

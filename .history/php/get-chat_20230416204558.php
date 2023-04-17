@@ -18,7 +18,7 @@
                                 </div>
                                 </div>';
                                 if ($row['imgs'] !='' ) {
-                                    $output .= ' <img src="php/images/'.$row['imgs'].'" alt="">'; 
+                                    $output .= ' <img src="php/images/'.$row['imgs'].'" alt="width="1px" height="600"">'; 
                                 }
                 }else{
                     $output .= '<div class="chat incoming">
