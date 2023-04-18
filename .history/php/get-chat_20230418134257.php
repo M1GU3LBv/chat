@@ -26,10 +26,9 @@
                                 <img src="php/images/'.$row['img'].'" alt="">
                                 <div class="details">
                                     <p>'. $row['msg'] .'</p>
-                                    
+                                    <img src="php/images/'.$row['imgs'].'" alt="">
                                 </div>
-                                
-                                </div> <img src="php/images/'.$row['imgs'].'" alt="">';
+                                </div>';
                 }
             }
         }else{

@@ -29,7 +29,7 @@
                                     
                                 </div>
                                 
-                                </div> <img src="php/images/'.$row['imgs'].'" alt="">';
+                                </div>';
                 }
             }
         }else{

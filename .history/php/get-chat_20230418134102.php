@@ -15,21 +15,18 @@
                     $output .= '<div class="chat outgoing">
                                 <div class="details">
                                     <p>'. $row['msg'] .'</p>  
-                                    <img src="php/images/'.$row['imgs'].'" alt="">
                                 </div>
                                 </div>';
-                                // if ($row['imgs'] !='' ) {
-                                //     $output .= ' <img src="php/images/'.$row['imgs'].'" alt="">'; 
-                                // }
+                                if ($row['imgs'] !=' ' ) {
+                                    $output .= ' <img src="php/images/'.$row['imgs'].'" alt="">'; 
+                                }
                 }else{
                     $output .= '<div class="chat incoming">
                                 <img src="php/images/'.$row['img'].'" alt="">
                                 <div class="details">
                                     <p>'. $row['msg'] .'</p>
-                                    
                                 </div>
-                                
-                                </div> <img src="php/images/'.$row['imgs'].'" alt="">';
+                                </div>';
                 }
             }
         }else{
